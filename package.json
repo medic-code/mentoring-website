@@ -1,0 +1,80 @@
+{
+  "name": "website-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "cross-env ENV=prod next build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome",
+    "dev": "cross-env ENV=dev NODE_OPTIONS='--inspect' next dev",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint --ext=jsx,ts,tsx . --fix",
+    "start": "next start",
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "dependencies": {
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.2.4",
+    "typescript": "5.1.3",
+    "@microflash/remark-figure-caption": "^1.0.0",
+    "@types/gtag.js": "^0.0.12",
+    "@types/node": "18.14.1",
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.0.7",
+    "cypress": "^12.7.0",
+    "dotenv": "^16.0.3",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.2.1",
+    "next": "^13.2.4-canary.5",
+    "next-seo": "^6.0.0",
+    "polished": "^4.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^4.4.1",
+    "styled-components-modifiers": "^1.2.5"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.2.1",
+    "@testing-library/cypress": "^9.0.0",
+    "@testing-library/dom": "^9.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "coverageReporters": ["lcov","text","html"],
+    "testMatch": ["**/*.test.ts"],
+    "testPathIgnorePatterns": ["<rootdir>/node_modules"],
+    "setupFilesAfterEnv": ["./setup-jest.ts"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medic-code/website-template"
+  }
+}

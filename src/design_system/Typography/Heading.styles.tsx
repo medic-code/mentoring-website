@@ -6,7 +6,7 @@ import { IProps } from './Heading.types';
 const HEADING = `
                  line-height: 1.6818;
                  margin: 0 0 1rem 0;
-                 color: hsl(var(--palette-green-75));
+                 color: hsl(var(--palette-gray-85));
              `;
 
 const TEXT_MODIFIERS = {
@@ -29,27 +29,27 @@ const TEXT_MODIFIERS = {
     font-weight: ${fontWeights['--bold']};
     line-height: 1.6818;
     margin: 1rem 0 0rem 0;
-    color: hsl(var(--palette-green-75));
+    color: hsl(var(--palette-gray-85));
   `,
 
   modifiedHeading3: () => `
     font-weight: ${fontWeights['--bold']};
     line-height: 1.6818;
     margin: 1rem 0 0rem 0;
-    color: hsl(var(--palette-green-75));
+    color: hsl(var(--palette-gray-85));
   `,
   modifiedHeading4: () => `
   font-weight: ${fontWeights['--400']};
   line-height: 1.6818;
   margin: 1rem 0 0rem 0;
-  color: hsl(var(--palette-green-75));
+  color: hsl(var(--palette-gray-85));
 `,
 };
 
 const StyledHeading1 = styled.h1<IProps>`
   padding: 0px;
   line-height: 1.6818;
-  color: hsl(var(--palette-green-75));
+  color: hsl(var(--palette-gray-85));
   margin: ${(props) => props.margin || '0 0 1.45rem 0'};
   word-break: keep-all;
   letter-spacing: 0.3px;
@@ -61,7 +61,7 @@ const StyledHeading1 = styled.h1<IProps>`
 const StyledHeading2 = styled.h2<IProps>`
   padding: 0px;
   line-height: 1.6818;
-  color: hsl(var(--palette-green-75));
+  color: hsl(var(--palette-gray-85));
   margin: ${(props) => props.margin || '0 0 1.45rem 0'};
   word-break: keep-all;
   letter-spacing: 0.3px;
@@ -73,7 +73,7 @@ const StyledHeading2 = styled.h2<IProps>`
 const StyledHeading3 = styled.h3<IProps>`
   padding: 0px;
   line-height: 1.6818;
-  color: hsl(var(--palette-green-75));
+  color: hsl(var(--palette-gray-85));
   margin: ${(props) => props.margin || '0 0 1.45rem 0'};
   word-break: keep-all;
   letter-spacing: 0.3px;
@@ -85,7 +85,7 @@ const StyledHeading3 = styled.h3<IProps>`
 const StyledHeading4 = styled.h4<IProps>`
   padding: 0px;
   line-height: 1.6818;
-  color: hsl(var(--palette-green-75));
+  color: hsl(var(--palette-gray-85));
   margin: ${(props) => props.margin || '0 0 1.45rem 0'};
   word-break: keep-all;
   letter-spacing: 0.3px;

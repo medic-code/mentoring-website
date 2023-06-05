@@ -9,7 +9,7 @@ const StyledText = styled.p<IProps>`
   line-height: 1.9;
   word-break: keep-all;
   letter-spacing: 0.3px;
-  text-align: ${(props) => props.textAlign || 'center'};
+  text-align: ${(props) => props.textAlign || 'left'};
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-size: ${(props) => (props.size ? props.size : fontSizes['--paragraph'])};
@@ -17,7 +17,7 @@ const StyledText = styled.p<IProps>`
   font-weight: ${(props) =>
     props.fontWeight ? props.fontWeight : fontWeights['--normal']};
   color: ${(props) =>
-    props.color ? props.color : 'hsl(var(--palette-blue-45))'};
+    props.color ? props.color : 'hsl(var(--palette-gray-70))'};
 `;
 
 export default StyledText;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const StyledSVG = styled.svg`
-  fill: hsl(var(--palette-green-75));
+  fill: hsl(0,0%,85%);
 `;

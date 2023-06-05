@@ -1,7 +1,7 @@
 'use client' 
 
 import Image from 'next/image';
-import { HeaderWrapper,StyledLogo} from './header.styles';
+import { HeaderWrapper,StyledLogo, StyledTitle} from './header.styles';
 import { Grid,Anchor,Heading1,Flex} from '@/design_system';
 
 const Header = () => {
@@ -14,7 +14,9 @@ const Header = () => {
                 <Anchor href="/">
                     <Image src="/logo.svg" alt="Mentoring logo" className="logo" width={75} height={75} priority />
                 </Anchor>
+                <StyledTitle>
                 <Heading1>connectMed</Heading1>
+                </StyledTitle>
                 </Flex>
                 </StyledLogo>
                 

@@ -24,7 +24,7 @@ const StyledAnchor = styled.a<AnchorProps>`
   transition: border-color 0.3s ease, color 0.3s ease;
   word-break: break-word;
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
   ${applyStyleModifiers(ANCHOR_MODIFIERS)}
 `;
 

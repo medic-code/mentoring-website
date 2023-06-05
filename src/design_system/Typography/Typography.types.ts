@@ -4,6 +4,7 @@ export default interface TextProps
   size?: string;
   margin?: string;
   fontWeight?: string;
+  textAlign: string;
 }
 
 export interface IProps {
@@ -11,4 +12,5 @@ export interface IProps {
   size?: string;
   fontWeight?: string;
   margin?: string;
+  textAlign: string;
 }

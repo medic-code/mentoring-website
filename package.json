@@ -22,12 +22,11 @@
     ]
   },
   "dependencies": {
-    "@types/react": "18.2.8",
-    "@types/react-dom": "18.2.4",
-    "typescript": "5.1.3",
     "@microflash/remark-figure-caption": "^1.0.0",
     "@types/gtag.js": "^0.0.12",
     "@types/node": "18.14.1",
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.2.4",
     "@types/styled-components": "^5.1.26",
     "babel-plugin-styled-components": "^2.0.7",
     "cypress": "^12.7.0",
@@ -39,8 +38,9 @@
     "polished": "^4.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^4.4.1",
-    "styled-components-modifiers": "^1.2.5"
+    "styled-components": "^6.0.0-rc.1",
+    "styled-components-modifiers": "^1.2.5",
+    "typescript": "5.1.3"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.2.1",
@@ -68,10 +68,20 @@
   "jest": {
     "testEnvironment": "jsdom",
     "collectCoverage": true,
-    "coverageReporters": ["lcov","text","html"],
-    "testMatch": ["**/*.test.ts"],
-    "testPathIgnorePatterns": ["<rootdir>/node_modules"],
-    "setupFilesAfterEnv": ["./setup-jest.ts"]
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootdir>/node_modules"
+    ],
+    "setupFilesAfterEnv": [
+      "./setup-jest.ts"
+    ]
   },
   "repository": {
     "type": "git",

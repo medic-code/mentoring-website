@@ -11,15 +11,15 @@ export const fontSizes = {
   '--caption': '14px;',
   '--helpertext': '0.875rem',
   '--paragraph': '1rem',
-  '--header4': '1.125rem',
-  '--header3': '1.25rem',
-  '--header2': '1.5rem',
-  '--header1': '2rem',
+  '--header4': '22px',
+  '--header3': '28px',
+  '--header2': '36px',
+  '--header1': '44px',
 };
 
 export const fontWeights = {
   '--normal': '400',
   '--400': '400',
   '--semibold': '500',
-  '--bold': '600',
+  '--bold': '700',
 };
